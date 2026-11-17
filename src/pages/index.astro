@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import HeroDemo from "../components/HeroDemo";
+---
+
+<!doctype html>
+<html lang="ru" class="light" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>FlexFi — Astro + HeroUI</title>
+	</head>
+	<body class="flex min-h-dvh flex-col items-center justify-center gap-8 bg-background p-8 text-foreground antialiased">
+		<header class="text-center">
+			<h1 class="text-3xl font-semibold tracking-tight">FlexFi</h1>
+			<p class="text-muted">Astro 7 · React 19 · HeroUI v3 · Tailwind CSS v4 · Lucide</p>
+		</header>
+		<HeroDemo client:load />
+	</body>
+</html>
